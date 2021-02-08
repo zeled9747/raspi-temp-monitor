@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/materialize/materialize.min.css}"
+        href="../static/materialize/materialize.min.css">
+    <link rel="stylesheet" th:href="@{/style.css}" href="../static/style.css">
+    <title>Raspberry pi CPU temperature monitor</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2 chart-container">
+                <canvas id="temp-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script th:src="@{/materialize/materialize.min.js}" src="../static/materialize/materialize.min.js"></script>
+    <script th:src="@{/chartjs/Chart.min.js}" src="../static/chartjs/Chart.min.js"></script>
+    <script th:src="@{/main.js}" src="../static/main.js"></script>
+</body>
+
+</html>
