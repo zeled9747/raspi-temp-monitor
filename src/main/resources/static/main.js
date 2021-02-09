@@ -11,7 +11,7 @@ var temp_chart = new Chart(ctx, {
         labels: temperature,
         datasets: [{
             data: temperature,
-            label: temperature[temperature.length-1]+"°C",
+            label: " ",
             borderWidth: 1,
             borderColor: "aqua",
             backgroundColor: "transparent",
@@ -38,5 +38,6 @@ var temp_chart = new Chart(ctx, {
 new EventSource('/temperature').onmessage = function (evt) {
     temperature.push(evt.data);
     temperature.shift();
+    temp_chart.data.datasets[0].label = evt.data+"°C"
     temp_chart.update();
 };
