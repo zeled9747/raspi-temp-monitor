@@ -1,4 +1,15 @@
-
+body {
+    background-color: #000;
+}
 .chart-container {
     margin-top: 100px;
+}
+.frame {
+    background-color: aqua;
+    padding: 1px;
+    clip-path: polygon(0 0, 15% 0, 21% 3%, 75% 3%, 81% 0, 100% 0, 100% 100%, 83% 100%, 77% 97%, 23% 97%, 17% 100%, 0 100%);
+}
+.inner-frame {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
