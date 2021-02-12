@@ -23,7 +23,8 @@ var temp_chart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax: 100,
                 }
             }]
         },
