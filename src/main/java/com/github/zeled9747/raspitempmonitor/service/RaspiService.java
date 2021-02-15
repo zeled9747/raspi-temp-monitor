@@ -4,9 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import org.springframework.stereotype.Service;
-
-@Service
 public class RaspiService {
 
 	public static float getCpuTemp() {
