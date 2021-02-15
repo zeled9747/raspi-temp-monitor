@@ -16,7 +16,11 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String index() {
-		return "index";
+		if( RaspiService.isRaspberry() ) {
+			return "index";
+		} else {
+			return "redirect:/notraspberry";
+		}
 	}
 
 	@ResponseBody
