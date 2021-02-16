@@ -13,3 +13,13 @@ body {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.9);
 }
+.card {
+    margin: 0;
+    color: aqua;
+}
+.card a {
+    margin: 0 !important;
+}
+.mt-100 {
+    margin-top: 100px;
+}
